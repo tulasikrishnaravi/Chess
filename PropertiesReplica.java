@@ -13,18 +13,18 @@ import java.util.Set;
 
 
 public class PropertiesReplica {
-
+           //compostie relationship 
 	  private HashMap<String,String> h=new HashMap<String,String>();
-	
+	//method to set values in property class
 	public void set(String key,String value) {
 		this.h.put(key, value);
 		}
-	
+	//method to get values in property class
 	public void get(String key) {
 		
 		System.out.println(h.get(key));
 	}
-	
+	//method to save propetries in property class
 	public void save(File file) {
 		FileWriter f;
 		try {
@@ -42,6 +42,7 @@ public class PropertiesReplica {
 			}
 			
 	}
+	//method to load properties from a file in to property class
 		public void loader(File file)
 		{ 
 			try {
@@ -63,6 +64,7 @@ public class PropertiesReplica {
 				
 			}
 	
+	//method to display the elements in list
 		public void list() {
 			
 			Set<Entry<String,String>> data=h.entrySet();
